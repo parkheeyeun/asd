@@ -65,7 +65,7 @@ export default function Map () {
 
   function getWeather(lat, lon) {
     const base = "https://api.openweathermap.org/data/2.5/" // API 주소
-    const key ="12cf99c35db830ceeb7bc888be1ec4ce" //API 키값
+    const key ="lI4QugC17nmC8VBM9kZD47QHISfjPfmfQ2vseKTIoZS9UFLyvy18Ie10lRX99AhGAwGoVUk7%2FcX3xtKqhPYHLQ%3D%3D" //API 키값
     fetch(`${base}weather?lat=${lat}&lon=${lon}&appid=${key}`) 
       .then(res => res.json()) // API 주소를 통해 응답받은 파일은 json 으로 변환
       .then(data => { // json 으로 변환된 data 사용

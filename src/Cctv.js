@@ -14,7 +14,7 @@ export default function App2() {
   
   
   function fetchData() {
-    const endPoint = "http://apis.data.go.kr/3510500/illegal_parking_control_cctv/getList";
+    const endPoint = "https://apis.data.go.kr/3510500/illegal_parking_control_cctv/getList";
     const serviceKey = "Mf%2F7uAm3gWBUG7QaksqnTq7Oh7SBMCpvQl6%2F34k3Pp3fqR664rCOqarH0ikdFN7uJNbr6Zg7wgJ6GyhpWgdw0A%3D%3D";
     const type = "json";
     const pageNo = 1;
@@ -177,7 +177,7 @@ export default function App2() {
   
     return (
       <>
-      <div style={{ display: 'flex', justifyContent: 'center', marginTop: '16px' }}>
+      <div className='w-{300px} flex justify-center mt-4'>
           <button onClick={() => handleFilterButtonClick('경인로')}>경인로</button>
           <button onClick={() => handleFilterButtonClick('한나루로')}>한나루로</button>
           <button onClick={() => handleFilterButtonClick('인주대로')}>인주대로</button>

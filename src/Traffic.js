@@ -30,7 +30,7 @@ const years = [2021, 2020, 2019, 2018];
 
 function fetchData(city, year) {
 
-  const endPoint = 'http://apis.data.go.kr/B552061/frequentzoneLg/getRestFrequentzoneLg'
+  const endPoint = 'https://apis.data.go.kr/B552061/frequentzoneLg/getRestFrequentzoneLg'
   const serviceKey = process.env.REACT_APP_SERVICE_KEY;
   const type = 'json';
   const numOfRows = 10;
